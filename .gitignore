@@ -1,0 +1,32 @@
+# Python caches and environments
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.env.*
+# Generated data and experiment outputs
+results/
+anomaly_detection/results/
+logs/
+validation_exact_57_72/
+unraveled_graphs_150000_all/
+unraveled_graphs_150000_merged_captures/
+unraveled_graphs_150000_merged_captures_exact_57_72/
+test_merged_input_150000/
+external_methods/
+*.pkl
+*.pt
+*.pth
+*.ckpt
+*.log
+*.tmp
+*.save
+# System/editor files
+.DS_Store
+.vscode/
+# Intermediate summaries (keep final manifest)
+/*.csv
+/*.xlsx
+!/graph_timeline_merged_150000_final_split.csv
