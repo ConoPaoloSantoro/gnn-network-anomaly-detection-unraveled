@@ -1,32 +1,78 @@
-# Python caches and environments
+# Python
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+
+# Environments
 .venv/
 venv/
-.env
-.env.*
-# Generated data and experiment outputs
+.env/
+
+# Large datasets
+data/
+unraveled_graphs_150000_all/
+
+# Large detailed outputs
+node_feature_detailed_150000.csv
+flow_feature_detailed_150000.csv
+
+# Graph pickle files
+*.pkl
+
+# Logs and temporary files
+*.log
+*_runlog.txt
+*.tmp
+
+# Editor/system files
+.vscode/
+.DS_Store
+
+# ============================================================
+# Final thesis experiment - generated data and outputs
+# ============================================================
+
+# Experiment outputs
 results/
 anomaly_detection/results/
 logs/
+flow_comparison/
 validation_exact_57_72/
-unraveled_graphs_150000_all/
+presentation/
+
+# External/reference repositories
+external_methods/
+
+# Generated graph datasets and temporary graph inputs
 unraveled_graphs_150000_merged_captures/
 unraveled_graphs_150000_merged_captures_exact_57_72/
 test_merged_input_150000/
-external_methods/
-*.pkl
+
+# Generated analysis directories
+stage_graph_structure_plots_*/
+malicious_node_stage_feature_plots_*/
+table1_stats_unraveled/
+table4_stats_unraveled/
+
+# Generated root-level data summaries
+/*.csv
+/*.xlsx
+
+# Model checkpoints
 *.pt
 *.pth
 *.ckpt
-*.log
-*.tmp
+
+# Backup / temporary scripts
+*_BACKUP_*.py
+*_exact_fixed.py
 *.save
-# System/editor files
-.DS_Store
-.vscode/
-# Intermediate summaries (keep final manifest)
-/*.csv
-/*.xlsx
+
+# Keep the definitive experiment split manifest under version control
 !/graph_timeline_merged_150000_final_split.csv
+
+# Local reports / notes
+/*.txt
+/*.txtsource
+/presentation_briefing_150000.md
+/scripts/assign_split_merged_150000_intermediate.py
